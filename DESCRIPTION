@@ -1,0 +1,20 @@
+Package: nisr
+Type: Package
+Title: Read and Translate National Inpatient Sample Data
+Version: 0.0.0.9000
+Author@R: person("Mustafa", "Ascha", email = "mustafa.ascha@gmail.com",
+                role = c("aut", "cre"))
+Author: Mustafa Ascha [aut, cre]
+Maintainer: Mustafa Ascha <mustafa.ascha@gmail.com>
+Description: National Inpatient Sample (NIS) data comes in ASCII format,
+    and format files in SAS, Stata, or SPSS formats. This package reads
+    NIS ASCII files, and translates them according to Stata formatting
+    files provided by the Agency for Healthcare Research and Quality.
+License: MIT License, Copyright (c) 2016 Mustafa Steven Ascha
+URL: https://github.com/mustafaascha/nisr
+Encoding: UTF-8
+LazyData: true
+Imports:
+    dplyr
+    readr
+    stringr
