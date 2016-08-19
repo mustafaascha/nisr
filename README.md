@@ -9,4 +9,9 @@ For example, if I wanted to read the data from the Core NIS file from 2012, I wo
 
 > `NIS_core_data <- read_nis("CORE_NIS_2012", format = "core", year = 2012)`
 
+To install, use devtools: 
+
+> `install.packages("devtools")`
+> `devtools::install_github("mustafaascha/nisr")`
+
 Feel free to contribute or ask questions. 
