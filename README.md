@@ -16,3 +16,5 @@ To install, use devtools:
 > `devtools::install_github("mustafaascha/nisr")`
 
 Feel free to contribute or ask questions. 
+
+Note: I don't have all of the NIS years, so I can only guarantee that the year 2012 will work. Also, I have yet to ensure that the hospitality, severity, and diagnosis/procedure files work. 
