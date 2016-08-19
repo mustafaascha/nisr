@@ -19,11 +19,6 @@
 
 parse_year_format <- function(file, file_year) {
 
-  if(!(file_type == "core" | file_type == "hospital" | file_type == "dxpr" | file_type == "severity")) {
-    stop("Invalid file type specified, must be one of: core, hospital, dxpr, or severity")
-    return(NULL)
-  }
-
   #note: formatting pulled from stata
   #For core files
   if(file == "core"){
