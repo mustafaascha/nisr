@@ -11,7 +11,7 @@
 #' @param file_year The year that your NIS file comes from.
 #'
 #' @return A data.frame with four vectors, each describing the fixed-width NIS file from \code{file_year}
-#' @example parse_year_format(2012)
+# @example parse_year_format(2012)
 #' @importFrom magrittr %>%
 #' @importFrom stringr str_replace_all str_trim str_split
 
@@ -125,9 +125,11 @@ parse_year_format <- function(file, file_year) {
 #' This function reads a single type of NIS file (between Core, Hospital,
 #' Diagnosis/Procedure, and Severity) from a single year.
 #'
-#' @param file_year This is the NIS file type that you would like to read. Choose one of c("core", "hospital", "dxpr", "severity")
+#' @param file_path This is where the NIS file is located.
+#' @param file_type This is the NIS file type that you would like to read. Choose one of c("core", "hospital", "dxpr", "severity")
+#' @param year Choose a year between 2004 and 2012.
 #' @return A data.frame with all NIS fields
-#' @example read_file(file_path = "path/to/file", file_type = "core", year = 2012)
+# @example read_file(file_path = "path/to/file", file_type = "core", year = 2012)
 #' @importFrom readr read_fwf
 
 read_nis <- function(file_path, file_type, year){
