@@ -11,7 +11,8 @@ For example, if I wanted to read the data from the Core NIS file from 2012, I wo
 
 To install, use devtools: 
 
-> `install.packages("devtools")`
+> `install.packages("devtools")`  
+
 > `devtools::install_github("mustafaascha/nisr")`
 
 Feel free to contribute or ask questions. 
