@@ -128,7 +128,7 @@ parse_year_format <- function(file, file_year) {
 #' @export
 #' @importFrom readr read_fwf
 
-read_nis <- function(file_path, file_type, year){
+read_nis <- function(file_path, file_type, year, ...){
 
   if(!(file_type == "core" | file_type == "hospital" | file_type == "dxpr" | file_type == "severity")) {
     stop("Invalid file type specified, must be one of: core, hospital, dxpr, or severity")
@@ -147,7 +147,8 @@ read_nis <- function(file_path, file_type, year){
   read_fwf(file_path,
           col_positions = fwf_positions(start = formatFrame$start,
                                         end = formatFrame$end,
-                                        col_names = formatFrame$name))
+                                        col_names = formatFrame$name), 
+          ...)
 }
 
 
