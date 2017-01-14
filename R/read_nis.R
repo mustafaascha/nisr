@@ -126,7 +126,7 @@ parse_year_format <- function(file, file_year) {
 #' @return A data.frame with all NIS fields
 # @example read_file(file_path = "path/to/file", file_type = "core", year = 2012)
 #' @export
-#' @importFrom readr read_fwf
+#' @importFrom readr read_fwf fwf_positions
 
 read_nis <- function(file_path, file_type, year, ...){
 
