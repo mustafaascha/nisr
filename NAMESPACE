@@ -3,6 +3,7 @@
 export(read_nis)
 importFrom(magrittr,"%>%")
 importFrom(readr,read_fwf)
+importFrom(readr, fwf_positions)
 importFrom(stringr,str_replace_all)
 importFrom(stringr,str_split)
 importFrom(stringr,str_trim)
