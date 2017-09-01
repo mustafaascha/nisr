@@ -135,8 +135,8 @@ read_nis <- function(file_path, file_type, year, ...){
     return(NULL)
   }
 
-  if(year > 2012 | year < 2004) {
-    warning("This code was designed for the years 2004 through 2012, use at your own risk.")
+  if(year > 2012 | year < 2004) { #This should be a warning
+    print("This code was designed for the years 2004 through 2012, use at your own risk.")
     return(NULL)
   }
 
