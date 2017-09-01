@@ -7,7 +7,7 @@ Of course, you will have to provide the data. Assuming you have the NIS ASCII fi
 
 For example, if I wanted to read the data from the Core NIS file from 2012, I would run the following command:
 
-> `NIS_core_2012 <- read_nis("CORE_NIS_2012", format = "core", year = 2012)`
+> `NIS_core_2012 <- read_nis("CORE_NIS_2012", file_type = "core", year = 2012)`
 
 To install, use devtools: 
 
